@@ -1,0 +1,37 @@
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 528px;
+  height: 581px;
+
+  background-color: $primary-title-color;
+  transform: translate(-50%, -50%);
+}
+.close-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  align-items: center;
+  justify-content: center;
+
+  box-sizing: border-box;
+
+  margin: 8px 8px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+
+  transition: $animation-function;
+}
+.close-box {
+  & :focus,
+  & :hover {
+    fill: $primary-logo-color;
+    color: $primary-logo-color;
+  }
+}

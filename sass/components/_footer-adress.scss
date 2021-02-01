@@ -1,0 +1,37 @@
+.logo.footer {
+  margin: 0px;
+}
+.container.footer {
+  display: flex;
+}
+.footer-section {
+  background-color: $bcg-main-color;
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+.contacts .footer-tel {
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $primary-text-color;
+}
+.contacts .footer-mail {
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $primary-text-color;
+}
+.address {
+  font-style: inherit;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $primary-title-color;
+
+  margin: 0px;
+}
+.contacts.footer {
+  padding-top: 9px;
+}
+.ftr-address {
+  padding-top: 20px;
+}

@@ -1,0 +1,48 @@
+.subscribe {
+  margin-top: 12px;
+  margin-left: 109px;
+}
+.subscribe-input {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 12.5px;
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background-color: #2f303a;
+
+  margin-right: 12px;
+  padding: 16px 15px;
+  height: 50px;
+  width: 358px;
+}
+.subscribe-btn {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18.7px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  padding: 10px 28px 10px 29px;
+
+  color: $primary-title-color;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+
+  height: 50px;
+  width: 200px;
+}
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.svg-subscribe {
+  margin-left: 10px;
+  fill: currentColor;
+}

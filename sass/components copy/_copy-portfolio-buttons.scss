@@ -1,0 +1,38 @@
+.port-section {
+  padding-top: 81px;
+  padding-bottom: 94px;
+}
+.btn-container {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+.btn-container {
+  & :not(:last-child) {
+    margin-right: 8px;
+  }
+}
+.port-link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  border-radius: 4px;
+  background: #f5f4fa;
+  outline: none;
+  border: 0;
+  padding: 6px 22px 6px 22px;
+  transition: $animation-function;
+  transition-property: color, background, box-shadow;
+}
+.port-link {
+  &:focus,
+  &:hover {
+    background: $primary-logo-color;
+    color: $primary-title-color;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}

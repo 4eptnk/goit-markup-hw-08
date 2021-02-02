@@ -23,11 +23,17 @@ button {
   cursor: pointer;
 }
 .container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
+  width: 480px;
+  padding: 0px 15px;
+  margin: 0px auto;
+
+  @media screen and (min-width: 768px) {
+    width: 738px;
+  }
+
+  @media screen and (min-width: 1600px) {
+    width: 1170px;
+  }
 }
 textarea {
   resize: none;

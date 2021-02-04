@@ -1,7 +1,7 @@
-.clients-section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
+// .clients-section {
+//   padding-top: 94px;
+//   padding-bottom: 94px;
+// }
 .clients-title {
   font-weight: 700;
   font-size: 36px;
@@ -13,15 +13,15 @@
   padding-bottom: 50px;
   margin: 0px;
 }
-.container.clients-box {
-  display: flex;
-  justify-content: center;
-}
-.client-list {
-  &:nth-child(-n + 5) {
-    margin-right: 30px;
-  }
-}
+// .container.clients-box {
+//   display: flex;
+//   justify-content: center;
+// }
+// .client-list {
+//   &:nth-child(-n + 5) {
+//     margin-right: 30px;
+//   }
+// }
 .client-link {
   transition: $animation-function;
   transition-property: color, border-color;

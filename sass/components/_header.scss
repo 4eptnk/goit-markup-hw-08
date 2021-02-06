@@ -4,6 +4,7 @@ header {
 .container.nav {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 .nav-link,
 .connection {
@@ -118,4 +119,13 @@ header {
   height: 16px;
   margin-right: 10px;
   fill: currentColor;
+}
+.svg-container {
+  margin: 22px 8px 22px 0px;
+  width: 24px;
+  height: 16px;
+  &:focus,
+  &:hover {
+    fill: $primary-logo-color;
+  }
 }

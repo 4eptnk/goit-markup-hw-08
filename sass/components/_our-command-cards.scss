@@ -1,15 +1,10 @@
 .our-command {
   background-color: $icon-background-color;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
-
-// .wrk-section {
-//   display: flex;
-//   justify-content: center;
-// }
 .cmd-title {
-  padding-bottom: 50px;
+  padding-bottom: 30px;
   margin: 0px;
 
   font-weight: 700;
@@ -20,13 +15,17 @@
   color: $primary-black-color;
 }
 .wrk-container {
+  padding-bottom: 24px;
+  margin-bottom: 30px;
+
   background: $primary-title-color;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 .wrk-name {
-  margin: 30px auto 10px auto;
+  margin: 0px;
+  margin-top: 30px;
 
   text-align: center;
   font-weight: 500;
@@ -36,7 +35,12 @@
   color: $primary-black-color;
 }
 .wrk-place {
+  margin: 0px;
+  margin-top: 10px;
+  margin-bottom: 16px;
+
   text-align: center;
+
   font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
@@ -44,9 +48,3 @@
   letter-spacing: 0.03em;
   color: $primary-text-color;
 }
-// .wrk-container {
-//   margin-right: 30px;
-//   &:last-child {
-//     margin-right: 0px;
-//   }
-// }

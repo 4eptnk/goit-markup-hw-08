@@ -1,14 +1,13 @@
 .logo {
   font-family: raleway;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.16;
+  text-align: center;
   letter-spacing: 0.03em;
   color: $secondary-logo-color;
 }
-
 .logo.header {
-  margin-right: 93px;
+  justify-content: flex-start;
 }
 .header-section .logo {
   color: $secondary-logo-color;

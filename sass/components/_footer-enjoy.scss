@@ -1,22 +1,11 @@
-.enjoy {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: $primary-title-color;
-
-  padding-bottom: 20px;
-  margin: 0px;
+.enjoy-box {
+  margin-top: 60px;
+  text-align: center;
 }
-// .enjoy-box {
-//   margin-top: 12px;
-//   margin-left: 70px;
-// }
 
 .svg-box {
   display: flex;
-  align-self: center;
+  justify-content: center;
   & :not(:last-child) {
     margin-right: 10px;
   }

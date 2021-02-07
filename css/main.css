@@ -292,17 +292,16 @@ textarea::placeholder {
 
 .logo {
   font-family: raleway;
-  font-size: 24px;
-  line-height: 1.16;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
   color: #000000;
 }
 
 .logo.header {
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  margin-right: 93px;
 }
 
 .header-section .logo {
@@ -333,6 +332,14 @@ header {
           justify-content: space-between;
 }
 
+@media (min-width: 769.98px) {
+  .container.nav {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .nav-link,
 .connection {
   display: none;
@@ -340,12 +347,21 @@ header {
   margin: 0px;
 }
 
-.nav-link :not(:last-child) {
-  margin-right: 50px;
+@media (min-width: 769.98px) {
+  .nav-link,
+  .connection {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .nav-link :nth-child(3) {
-  margin-right: 288px;
+  margin-right: 258px;
+}
+
+.nav-link :not(:last-child) {
+  margin-right: 50px;
 }
 
 .header-link {
@@ -367,6 +383,12 @@ header {
 
 .header-link:focus, .header-link:hover {
   color: #2196f3;
+}
+
+@media (min-width: 769.98px) {
+  .header-link {
+    display: block;
+  }
 }
 
 .header-link.current {
@@ -474,6 +496,12 @@ header {
 
 .svg-container:focus, .svg-container:hover {
   fill: #2196f3;
+}
+
+@media (min-width: 769.98px) {
+  .svg-container {
+    display: none;
+  }
 }
 
 .port-section {

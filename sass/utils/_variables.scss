@@ -27,11 +27,11 @@ button {
   padding: 0px 15px;
   margin: 0px auto;
 
-  @media screen and (min-width: 769.98px) {
+  @media screen and (min-width: $tablet-width) {
     width: 738px;
   }
 
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: $desktop-width) {
     width: 1170px;
   }
 }

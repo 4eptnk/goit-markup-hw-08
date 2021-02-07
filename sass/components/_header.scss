@@ -5,19 +5,26 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  @media (min-width: $tablet-width) {
+    justify-content: center;
+  }
 }
+
 .nav-link,
 .connection {
   display: none;
   padding: 0px;
   margin: 0px;
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
 }
 .nav-link {
+  & :nth-child(3) {
+    margin-right: 258px;
+  }
   & :not(:last-child) {
     margin-right: 50px;
-  }
-  & :nth-child(3) {
-    margin-right: 288px;
   }
 }
 
@@ -40,6 +47,9 @@ header {
   &:focus,
   &:hover {
     color: $primary-logo-color;
+  }
+  @media (min-width: $tablet-width) {
+    display: block;
   }
 }
 .header-link.current {
@@ -127,5 +137,8 @@ header {
   &:focus,
   &:hover {
     fill: $primary-logo-color;
+  }
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 }

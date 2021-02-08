@@ -2,17 +2,46 @@ header {
   border-bottom: 1px solid #ececec;
 }
 .container.nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  @include header-display;
+  & .menu-container {
+    @include header-display;
+  }
   @media (min-width: $tablet-width) {
     justify-content: center;
   }
 }
+.menu-container {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 
+  width: 480px;
+  height: 796px;
+  padding: 48px 40px;
+
+  background-color: $primary-title-color;
+
+  @media (min-width: $tablet-width) {
+    position: static;
+    padding: 0;
+  }
+}
+.menu-container.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+.menu-button {
+  position: relative;
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
 .nav-link,
 .connection {
-  display: none;
+  display: block;
   padding: 0px;
   margin: 0px;
   @media (min-width: $tablet-width) {
@@ -29,7 +58,7 @@ header {
 }
 
 .header-link {
-  display: none;
+  display: block;
   position: relative;
 
   transition: $animation-function;
@@ -49,7 +78,7 @@ header {
     color: $primary-logo-color;
   }
   @media (min-width: $tablet-width) {
-    display: block;
+    display: flex;
   }
 }
 .header-link.current {
@@ -131,9 +160,13 @@ header {
   fill: currentColor;
 }
 .svg-container {
-  margin: 22px 8px 22px 0px;
-  width: 24px;
+  border: none;
+  background-color: transparent;
+  outline: none;
+
   height: 16px;
+  padding: 0px;
+  margin: 22px 8px 22px 0px;
   &:focus,
   &:hover {
     fill: $primary-logo-color;

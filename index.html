@@ -21,37 +21,43 @@
         <a class="logo header" href="#" lang="en">
           <span class="web">Web</span>Studio
         </a>
-        <div class="menu-container"></div>
-        <ul class="nav-link">
-          <li class="header-item">
-            <a class="header-link current" href="./index.html">Студия</a>
-          </li>
-          <li class="header-item">
-            <a class="header-link" href="./portfolio.html">Портфолио</a>
-          </li>
-          <li class="header-item">
-            <a class="header-link" href="#">Контакты</a>
-          </li>
-        </ul>
-        <ul class="nav-link connection">
-          <li class="contacts">
-            <a class="header-mail" href="mailto:info@devstudio.com">
-              <svg class="mail-icon">
-                <use href="./svg/symbol-defs.svg#icon-mail"></use>
-              </svg>
-              info@devstudio.com
-            </a>
-          </li>
-          <li class="contacts">
-            <a class="header-tel" href="tel:+380961111111">
-              <svg class="tel-icon">
-                <use href="./svg/symbol-defs.svg#icon-smartphone"></use>
-              </svg>
-              +38 096 111 11 11
-            </a>
-          </li>
-        </ul>
-        <div class="svg-container">
+        <div class="menu-container is-hidden">
+          <button class="menu-button">
+            <svg class="svg-close" width="11" height="11">
+              <use href="./svg/symbol-defs.svg#close"></use>
+            </svg>
+          </button>
+          <ul class="nav-link">
+            <li class="header-item">
+              <a class="header-link current" href="./index.html">Студия</a>
+            </li>
+            <li class="header-item">
+              <a class="header-link" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="header-item">
+              <a class="header-link" href="#">Контакты</a>
+            </li>
+          </ul>
+          <ul class="nav-link connection">
+            <li class="contacts">
+              <a class="header-mail" href="mailto:info@devstudio.com">
+                <svg class="mail-icon">
+                  <use href="./svg/symbol-defs.svg#icon-mail"></use>
+                </svg>
+                info@devstudio.com
+              </a>
+            </li>
+            <li class="contacts">
+              <a class="header-tel" href="tel:+380961111111">
+                <svg class="tel-icon">
+                  <use href="./svg/symbol-defs.svg#icon-smartphone"></use>
+                </svg>
+                +38 096 111 11 11
+              </a>
+            </li>
+          </ul>
+        </div>
+        <button class="svg-container">
           <svg width="24px" height="16px">
             <use
               width="24px"
@@ -59,7 +65,7 @@
               href="./svg/symbol-defs.svg#header-button"
             ></use>
           </svg>
-        </div>
+        </button>
       </div>
     </header>
 
@@ -271,7 +277,6 @@
                 class="image"
                 src="./photo/работник 1 (1).jpg"
                 width="450"
-                height="622px"
                 alt="Игорь Демьяненко"
               />
               <h3 class="wrk-name">Игорь Демьяненко</h3>
@@ -312,7 +317,6 @@
                 class="image"
                 src="./photo/работник 1 (4).jpg"
                 width="450"
-                height="622px"
                 alt="Ольга Репина"
               />
               <h3 class="wrk-name">Ольга Репина</h3>
@@ -353,7 +357,6 @@
                 class="image"
                 src="./photo/работник 1 (3).jpg"
                 width="450"
-                height="622px"
                 alt="Николай Тарасов"
               />
               <h3 class="wrk-name">Николай Тарасов</h3>
@@ -394,7 +397,6 @@
                 class="image"
                 src="./photo/работник 1 (2).jpg"
                 width="450"
-                height="622px"
                 alt="Михаил Ермаков"
               />
               <h3 class="wrk-name">Михаил Ермаков</h3>

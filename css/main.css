@@ -369,6 +369,8 @@ header {
   .menu-container {
     position: static;
     padding: 0;
+    width: auto;
+    height: auto;
   }
 }
 
@@ -378,7 +380,21 @@ header {
 }
 
 .menu-button {
-  position: relative;
+  position: absolute;
+  -webkit-transform: translate(-50%, 40%);
+          transform: translate(-50%, 40%);
+  top: 0;
+  right: 0;
+  border: none;
+  outline: none;
+  padding: 0;
+  margin-top: 22px;
+  margin-right: 18px;
+  background-color: transparent;
+}
+
+.menu-button:focus, .menu-button:hover {
+  fill: #2196f3;
 }
 
 @media (min-width: 769.98px) {
@@ -387,23 +403,15 @@ header {
   }
 }
 
-.nav-link,
-.connection {
-  display: block;
-  padding: 0px;
-  margin: 0px;
-}
-
 @media (min-width: 769.98px) {
-  .nav-link,
-  .connection {
+  .nav-link {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
 }
 
-.nav-link :nth-child(3) {
+.nav-link:nth-child(3) {
   margin-right: 258px;
 }
 
@@ -412,13 +420,10 @@ header {
 }
 
 .header-link {
-  display: block;
-  position: relative;
   -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   -webkit-transition-property: color;
   transition-property: color;
-  display: block;
   padding-bottom: 32px;
   padding-top: 32px;
   font-weight: 500;
@@ -426,6 +431,14 @@ header {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: #212121;
+}
+
+.header-link :nth-child(3) {
+  margin-right: 258px;
+}
+
+.header-link :not(:last-child) {
+  margin-right: 50px;
 }
 
 .header-link:focus, .header-link:hover {
@@ -454,6 +467,13 @@ header {
   border-radius: 2px;
   display: block;
   background-color: #2196f3;
+  opacity: 0;
+}
+
+@media (min-width: 769.98px) {
+  .header-link.current::after {
+    opacity: 1;
+  }
 }
 
 .contacts {

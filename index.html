@@ -21,9 +21,9 @@
         <a class="logo header" href="#" lang="en">
           <span class="web">Web</span>Studio
         </a>
-        <div class="menu-container is-hidden">
-          <button class="menu-button">
-            <svg class="svg-close" width="11" height="11">
+        <divdata-modal class="menu-container is-hidden" >
+          <button data-modal-close class="menu-button" >
+            <svg class="svg-close" width="19" height="19">
               <use href="./svg/symbol-defs.svg#close"></use>
             </svg>
           </button>
@@ -37,8 +37,6 @@
             <li class="header-item">
               <a class="header-link" href="#">Контакты</a>
             </li>
-          </ul>
-          <ul class="nav-link connection">
             <li class="contacts">
               <a class="header-mail" href="mailto:info@devstudio.com">
                 <svg class="mail-icon">
@@ -56,8 +54,26 @@
               </a>
             </li>
           </ul>
+          <!-- <ul class="nav-link connection">
+            <li class="contacts">
+              <a class="header-mail" href="mailto:info@devstudio.com">
+                <svg class="mail-icon">
+                  <use href="./svg/symbol-defs.svg#icon-mail"></use>
+                </svg>
+                info@devstudio.com
+              </a>
+            </li>
+            <li class="contacts">
+              <a class="header-tel" href="tel:+380961111111">
+                <svg class="tel-icon">
+                  <use href="./svg/symbol-defs.svg#icon-smartphone"></use>
+                </svg>
+                +38 096 111 11 11
+              </a>
+            </li>
+          </ul> -->
         </div>
-        <button class="svg-container">
+        <button data-modal-open class="svg-container">
           <svg width="24px" height="16px">
             <use
               width="24px"
@@ -571,5 +587,6 @@
       </div>
     </footer>
     <script src="./js/modal.js"></script>
+    <script src="./js/header-menu.js"></script>
   </body>
 </html>

@@ -27,6 +27,8 @@ header {
   @media (min-width: $tablet-width) {
     position: static;
     padding: 0;
+    width: auto;
+    height: auto;
   }
 }
 .menu-container.is-hidden {
@@ -34,22 +36,43 @@ header {
   pointer-events: none;
 }
 .menu-button {
-  position: relative;
+  position: absolute;
+  transform: translate(-50%, +40%);
+  top: 0;
+  right: 0;
+
+  border: none;
+  outline: none;
+
+  padding: 0;
+  margin-top: 22px;
+  margin-right: 18px;
+
+  background-color: transparent;
+
+  &:focus,
+  &:hover {
+    fill: $primary-logo-color;
+  }
+
   @media (min-width: $tablet-width) {
     display: none;
   }
 }
-.nav-link,
-.connection {
-  display: block;
-  padding: 0px;
-  margin: 0px;
+// .nav-link,
+// .connection {
+//   // display: none;
+//   padding: 0px;
+//   margin: 0px;
+//   @media (min-width: $tablet-width) {
+//     display: flex;
+//   }
+// }
+.nav-link {
   @media (min-width: $tablet-width) {
     display: flex;
   }
-}
-.nav-link {
-  & :nth-child(3) {
+  &:nth-child(3) {
     margin-right: 258px;
   }
   & :not(:last-child) {
@@ -58,13 +81,15 @@ header {
 }
 
 .header-link {
-  display: block;
-  position: relative;
-
+  & :nth-child(3) {
+    margin-right: 258px;
+  }
+  & :not(:last-child) {
+    margin-right: 50px;
+  }
   transition: $animation-function;
   transition-property: color;
 
-  display: block;
   padding-bottom: 32px;
   padding-top: 32px;
   font-weight: 500;
@@ -95,6 +120,10 @@ header {
     border-radius: 2px;
     display: block;
     background-color: $primary-logo-color;
+    opacity: 0;
+    @media (min-width: $tablet-width) {
+      opacity: 1;
+    }
   }
 }
 .contacts {

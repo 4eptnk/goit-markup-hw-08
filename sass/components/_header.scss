@@ -2,94 +2,58 @@ header {
   border-bottom: 1px solid #ececec;
 }
 .container.nav {
-  @include header-display;
-  & .menu-container {
-    @include header-display;
-  }
-  @media (min-width: $tablet-width) {
-    justify-content: center;
-  }
+  display: flex;
+  align-items: center;
 }
 .menu-container {
-  display: block;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-
-  width: 480px;
-  height: 796px;
-  padding: 48px 40px;
-
-  background-color: $primary-title-color;
-
-  @media (min-width: $tablet-width) {
-    position: static;
-    padding: 0;
-    width: auto;
-    height: auto;
-  }
+  display: flex;
 }
-.menu-container.is-hidden {
-  opacity: 0;
-  pointer-events: none;
-}
-.menu-button {
-  position: absolute;
-  transform: translate(-50%, +40%);
-  top: 0;
-  right: 0;
+// .menu-container {
+//   position: absolute;
+//   top: 0;
+//   right: 0;
+//   bottom: 0;
+//   left: 0;
 
-  border: none;
-  outline: none;
+//   width: 480px;
+//   height: 796px;
 
-  padding: 0;
-  margin-top: 22px;
-  margin-right: 18px;
+//   background-color: $primary-title-color;
 
-  background-color: transparent;
-
-  &:focus,
-  &:hover {
-    fill: $primary-logo-color;
-  }
-
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
-}
-// .nav-link,
-// .connection {
-//   // display: none;
-//   padding: 0px;
-//   margin: 0px;
-//   @media (min-width: $tablet-width) {
-//     display: flex;
-//   }
+//   opacity: 0;
 // }
-.nav-link {
+.address-link {
+  // display: none;
   @media (min-width: $tablet-width) {
+    display: block;
+    padding: 0px;
+    margin: 0px;
+    @include not-last-child-30;
+  }
+  @media (min-width: $desktop-width) {
     display: flex;
   }
-  &:nth-child(3) {
-    margin-right: 258px;
+}
+.nav-link {
+  // display: none;
+  @media (min-width: $tablet-width) {
+    display: flex;
+    @include not-last-child-50;
+    margin-right: 88px;
   }
-  & :not(:last-child) {
-    margin-right: 50px;
+  @media (min-width: $desktop-width) {
+    display: flex;
+    @include not-last-child-50;
+    margin-right: 278px;
   }
 }
-
 .header-link {
-  & :nth-child(3) {
-    margin-right: 258px;
-  }
-  & :not(:last-child) {
-    margin-right: 50px;
-  }
+  position: relative;
+
   transition: $animation-function;
   transition-property: color;
 
+  display: block;
   padding-bottom: 32px;
   padding-top: 32px;
   font-weight: 500;
@@ -102,9 +66,6 @@ header {
   &:hover {
     color: $primary-logo-color;
   }
-  @media (min-width: $tablet-width) {
-    display: flex;
-  }
 }
 .header-link.current {
   color: $primary-logo-color;
@@ -113,17 +74,13 @@ header {
 
     position: absolute;
     left: 0;
-    bottom: -1px;
+    bottom: -2px;
 
     width: 100%;
     height: 5px;
     border-radius: 2px;
     display: block;
     background-color: $primary-logo-color;
-    opacity: 0;
-    @media (min-width: $tablet-width) {
-      opacity: 1;
-    }
   }
 }
 .contacts {
@@ -135,20 +92,26 @@ header {
   transition-property: color;
 
   display: flex;
-  padding-bottom: 39.5px;
-  padding-top: 39.5px;
+  // padding-bottom: 39.5px;
+  // padding-top: 39.5px;
 
+  font-weight: 500;
+  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: $primary-text-color;
+
+  font-size: 12px;
+  line-height: 1.16;
 }
 .contacts .header-mail {
   transition: $animation-function;
   transition-property: color;
 
   display: flex;
-  padding-bottom: 39.5px;
-  padding-top: 39.5px;
+  // padding-bottom: 39.5px;
+  // padding-top: 39.5px;
+  // margin-left: 288px;
 
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -159,48 +122,32 @@ header {
   }
 }
 .header-mail {
-  width: 161px;
+  // width: 161px;
   height: 16px;
   align-items: center;
   justify-content: center;
   color: $primary-text-color;
 }
 .mail-icon {
-  width: 16px;
-  height: 12px;
-  margin-right: 10px;
-  fill: currentColor;
+  @include header-address-icon;
 }
 .header-tel {
-  width: 142px;
-  height: 16px;
   align-items: center;
   justify-content: center;
   color: $primary-text-color;
+  @media (min-width: $tablet-width) {
+    width: 123px;
+    height: 14px;
+  }
+  @media (min-width: $desktop-width) {
+    width: 142px;
+    height: 16px;
+  }
   &:hover,
   &:focus {
     color: $primary-logo-color;
   }
 }
 .tel-icon {
-  width: 10px;
-  height: 16px;
-  margin-right: 10px;
-  fill: currentColor;
-}
-.svg-container {
-  border: none;
-  background-color: transparent;
-  outline: none;
-
-  height: 16px;
-  padding: 0px;
-  margin: 22px 8px 22px 0px;
-  &:focus,
-  &:hover {
-    fill: $primary-logo-color;
-  }
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
+  @include header-address-icon;
 }

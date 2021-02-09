@@ -3,3 +3,17 @@
   align-items: center;
   justify-content: space-between;
 }
+@mixin not-last-child-30 {
+  & :not(:last-child) {
+    padding-right: 30px;
+  }
+}
+@mixin not-last-child-50 {
+  & :not(:last-child) {
+    padding-right: 50px;
+  }
+}
+@mixin header-address-icon {
+  margin-right: 10px;
+  fill: currentColor;
+}

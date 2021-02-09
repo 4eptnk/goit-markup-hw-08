@@ -8,7 +8,16 @@
   color: $secondary-logo-color;
 }
 .logo.header {
-  margin-right: 93px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  @media (min-width: $tablet-width) {
+    margin-right: 88px;
+    margin-top: 26px;
+    margin-bottom: 26px;
+  }
+  @media (min-width: $desktop-width) {
+    margin-right: 93px;
+  }
 }
 .header-section .logo {
   color: $secondary-logo-color;

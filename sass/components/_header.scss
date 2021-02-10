@@ -23,19 +23,18 @@ header {
 //   opacity: 0;
 // }
 .address-link {
-  // display: none;
+  display: none;
   @media (min-width: $tablet-width) {
     display: block;
     padding: 0px;
     margin: 0px;
-    @include not-last-child-30;
   }
   @media (min-width: $desktop-width) {
     display: flex;
   }
 }
 .nav-link {
-  // display: none;
+  display: none;
   @media (min-width: $tablet-width) {
     display: flex;
     @include not-last-child-50;
@@ -84,70 +83,84 @@ header {
   }
 }
 .contacts {
+  display: flex;
+  @include align-justify-center;
   font-weight: 500;
   font-size: 14px;
-}
-.contacts .header-tel {
-  transition: $animation-function;
-  transition-property: color;
-
-  display: flex;
-  // padding-bottom: 39.5px;
-  // padding-top: 39.5px;
-
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: $primary-text-color;
-
-  font-size: 12px;
-  line-height: 1.16;
-}
-.contacts .header-mail {
-  transition: $animation-function;
-  transition-property: color;
-
-  display: flex;
-  // padding-bottom: 39.5px;
-  // padding-top: 39.5px;
-  // margin-left: 288px;
-
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: $primary-text-color;
-  &:hover,
-  &:focus {
-    color: $primary-logo-color;
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+    @include align-justify-center;
+  }
+  @media (min-width: $desktop-width) {
+    display: inline-flex;
+    @include align-justify-center;
+    & :hover,
+    & :focus {
+      color: $primary-logo-color;
+      fill: $primary-logo-color;
+    }
   }
 }
 .header-mail {
-  // width: 161px;
-  height: 16px;
-  align-items: center;
-  justify-content: center;
   color: $primary-text-color;
+
+  transition: $animation-function;
+  transition-property: color;
+
+  @media (min-width: $tablet-width) {
+    font-size: 12px;
+    line-height: 1.16;
+  }
+  @media (min-width: $desktop-width) {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    margin-right: 30px;
+  }
+
+  @include align-justify-center;
 }
 .mail-icon {
   @include header-address-icon;
-}
-.header-tel {
-  align-items: center;
-  justify-content: center;
-  color: $primary-text-color;
+  fill: $primary-text-color;
   @media (min-width: $tablet-width) {
-    width: 123px;
-    height: 14px;
+    margin: 0px;
+    padding: 0px;
   }
   @media (min-width: $desktop-width) {
-    width: 142px;
-    height: 16px;
+    height: 12px;
+    margin-right: 10px;
   }
-  &:hover,
-  &:focus {
-    color: $primary-logo-color;
+}
+.header-tel {
+  color: $primary-text-color;
+
+  transition: $animation-function;
+  transition-property: color;
+
+  @media (min-width: $tablet-width) {
+    font-size: 12px;
+    line-height: 1.16;
   }
+  @media (min-width: $desktop-width) {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+  }
+
+  @include align-justify-center;
 }
 .tel-icon {
   @include header-address-icon;
+  fill: $primary-text-color;
+  @media (min-width: $tablet-width) {
+    margin: 0px;
+    padding: 0px;
+  }
+  @media (min-width: $desktop-width) {
+    margin-right: 10px;
+    height: 16px;
+  }
 }

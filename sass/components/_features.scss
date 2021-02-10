@@ -10,6 +10,23 @@
   & :last-of-type {
     margin-bottom: 0px;
   }
+  @media (min-width: $tablet-width) {
+    display: inline-flex;
+    flex-wrap: wrap;
+  }
+}
+.features-item {
+  @media (min-width: $tablet-width) {
+    display: block;
+    width: 354px;
+    height: 251px;
+    flex-basis: calc(100% / 2 - 16px);
+  }
+  @include nth-child-odd;
+  @media (min-width: $desktop-width) {
+    flex-basis: calc(100% / 4 - 23px);
+    @include not-last-child-margin-30;
+  }
 }
 .features-title {
   display: flex;
@@ -26,6 +43,9 @@
 
   margin-bottom: 0px;
   margin-top: 30px;
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
 }
 .features-text {
   font-size: 14px;

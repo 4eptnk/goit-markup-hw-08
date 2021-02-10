@@ -17,3 +17,22 @@
   margin-right: 10px;
   fill: currentColor;
 }
+@mixin align-justify-center {
+  align-items: center;
+  justify-content: center;
+}
+@mixin ntn-child-3 {
+  & :nth-child(-n + 3) {
+    padding-right: 50px;
+  }
+}
+@mixin nth-child-odd {
+  &:nth-child(odd) {
+    margin-right: 30px;
+  }
+}
+@mixin not-last-child-margin-30 {
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}

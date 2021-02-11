@@ -62,8 +62,7 @@
   color: $primary-text-color;
 
   transition: $animation-function;
-}
-.input {
+
   &:focus {
     border-color: $primary-logo-color;
   }
@@ -150,7 +149,7 @@
   border-radius: 4px;
   border: none;
 
-  font-weight: bold;
+  font-weight: 700;
   font-size: 16px;
   line-height: 18.7px;
   display: flex;

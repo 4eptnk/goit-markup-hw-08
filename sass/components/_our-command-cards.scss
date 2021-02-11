@@ -2,9 +2,30 @@
   background-color: $icon-background-color;
   padding-top: 60px;
   padding-bottom: 60px;
+  @media (min-width: $desktop-width) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+.container.cmd {
+  display: table;
+}
+.wrk-section {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  @media (min-width: $desktop-width) {
+    display: inline-flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
 }
 .cmd-title {
   padding-bottom: 30px;
+  @media (min-width: $desktop-width) {
+    padding-bottom: 50px;
+  }
   margin: 0px;
 
   font-weight: 700;
@@ -17,15 +38,33 @@
 .wrk-container {
   padding-bottom: 24px;
   margin-bottom: 30px;
+  @media (min-width: $tablet-width) {
+    // flex-basis: calc(100% / 2 - 0px);
+    @include nth-child-odd;
+  }
 
   background: $primary-title-color;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  @media (min-width: $desktop-width) {
+    @include work-container-desktop;
+  }
+}
+.image {
+  width: 450px;
+  @media (min-width: $tablet-width) {
+    width: 354px;
+  }
+  @media (min-width: $desktop-width) {
+    width: 270px;
+  }
 }
 .wrk-name {
-  margin: 0px;
   margin-top: 30px;
+  @media (min-width: $desktop-width) {
+    margin: 30px auto 10px auto;
+  }
 
   text-align: center;
   font-weight: 500;
@@ -35,7 +74,6 @@
   color: $primary-black-color;
 }
 .wrk-place {
-  margin: 0px;
   margin-top: 10px;
   margin-bottom: 16px;
 

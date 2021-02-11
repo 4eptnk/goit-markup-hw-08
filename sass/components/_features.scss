@@ -5,7 +5,6 @@
 .features-container {
   & :not(:last-child) {
     margin-bottom: 30px;
-    // flex-basis: calc(100% / 4 - 23px);
   }
   & :last-of-type {
     margin-bottom: 0px;

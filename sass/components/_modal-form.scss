@@ -5,7 +5,10 @@
 
   width: 370px;
   height: 60px;
-
+  @media (min-width: $desktop-width) {
+    width: 448px;
+    height: 23px;
+  }
   margin: 40px 40px 2px 40px;
 }
 .modal-title {
@@ -27,7 +30,7 @@
 .svg {
   position: absolute;
   top: 50%;
-  left: 10px;
+  left: 12px;
   transform: translateY(-50%);
 }
 .input-text {
@@ -45,6 +48,9 @@
 }
 .input {
   width: 370px;
+  @media (min-width: $desktop-width) {
+    width: 448px;
+  }
   height: 40px;
   padding: 12px 42px;
 
@@ -62,20 +68,17 @@
   color: $primary-text-color;
 
   transition: $animation-function;
-}
-.input {
-  &:focus ~ .input-text {
-    color: $primary-logo-color;
-  }
-  &:focus {
-    border-color: $primary-logo-color;
-  }
-  &:focus ~ .svg {
-    fill: $primary-logo-color;
+
+  @include mobile-modal-focus;
+  @media (min-width: $tablet-width) {
+    @include tablet-modal-focus;
   }
 }
 .input.comments {
   width: 370px;
+  @media (min-width: $desktop-width) {
+    width: 448px;
+  }
   height: 120px;
 
   padding: 12px 16px;
@@ -100,7 +103,10 @@
   width: 16px;
   height: 15px;
   position: relative;
-  left: 8px;
+  left: 10px;
+  @media (min-width: $desktop-width) {
+    left: 16px;
+  }
 
   transition: $animation-function;
 
@@ -119,7 +125,10 @@
 }
 .checkbox-icon {
   position: relative;
-  left: -8px;
+  left: -6px;
+  @media (min-width: $desktop-width) {
+    left: 0px;
+  }
 
   transition: $animation-function;
 
@@ -131,11 +140,19 @@
 }
 .policy-text {
   margin: 0;
+  @media (min-width: $desktop-width) {
+    margin-left: 15px;
+  }
 
   font-weight: 400;
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.03em;
+  @media (min-width: $desktop-width) {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.71;
+  }
 
   cursor: pointer;
 
@@ -154,6 +171,11 @@
   width: 200px;
   height: 50px;
   margin: 30px 125px 40px 125px;
+  @media (min-width: $desktop-width) {
+    margin: 30px 164px 37px 164px;
+    display: flex;
+    @include align-justify-center;
+  }
 
   background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);

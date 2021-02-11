@@ -36,3 +36,29 @@
     margin-right: 30px;
   }
 }
+@mixin mobile-modal-focus {
+  &:focus ~ .input-text {
+    color: $primary-logo-color;
+  }
+  &:focus {
+    border-color: $primary-logo-color;
+  }
+  &:focus ~ .svg {
+    fill: $primary-logo-color;
+  }
+}
+@mixin tablet-modal-focus {
+  &:focus ~ .input-text {
+    color: $primary-text-color;
+  }
+  &:focus {
+    border-color: $primary-logo-color;
+  }
+}
+@mixin work-container-desktop {
+  padding-bottom: 30px;
+  margin: 0px 30px 0px 0px;
+  &:last-child {
+    margin-right: 0px;
+  }
+}

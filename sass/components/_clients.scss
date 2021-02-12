@@ -1,3 +1,9 @@
+.clients-section {
+  @media (min-width: $desktop-width) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 .clients-title {
   font-weight: 700;
   font-size: 36px;
@@ -9,16 +15,32 @@
   padding-bottom: 30px;
   padding-top: 60px;
   margin: 0px;
+  @media (min-width: $desktop-width) {
+    padding-bottom: 50px;
+    padding-top: 0px;
+  }
 }
 .clients-box {
   display: flex;
   flex-wrap: wrap;
   padding-bottom: 30px;
+  @media (min-width: $desktop-width) {
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
 }
 .client-list {
   margin-bottom: 30px;
   &:nth-child(2n + 1) {
     margin-right: 30px;
+  }
+  @media (min-width: $tablet-width) {
+    @include clients-tablet-margin;
+  }
+  @media (min-width: $desktop-width) {
+    &:nth-child(-n + 5) {
+      margin-right: 30px;
+    }
   }
 }
 .client-link {
@@ -27,6 +49,12 @@
 
   width: 210px;
   height: 90px;
+  @media screen and (min-width: $tablet-width) {
+    width: 226px;
+  }
+  @media (min-width: $desktop-width) {
+    width: 170px;
+  }
 
   border-color: $icon-color;
   color: $icon-color;
@@ -34,8 +62,7 @@
   border-radius: 4px;
 
   display: flex;
-  justify-content: center;
-  align-items: center;
+  @include align-justify-center;
   outline: none;
   &:hover,
   &:focus {

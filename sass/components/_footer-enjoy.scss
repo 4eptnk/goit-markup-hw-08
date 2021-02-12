@@ -1,6 +1,17 @@
 .enjoy-box {
   margin-top: 60px;
   text-align: center;
+  position: static;
+  @media (min-width: $tablet-width) {
+    margin-top: 0px;
+    position: absolute;
+    right: 89px;
+  }
+  @media (min-width: $desktop-width) {
+    position: static;
+    margin-top: 12px;
+    margin-left: 70px;
+  }
 }
 
 .svg-box {

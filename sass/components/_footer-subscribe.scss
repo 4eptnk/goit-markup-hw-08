@@ -1,7 +1,22 @@
 .subscribe {
-  display: inline-block;
+  display: block;
   margin-top: 60px;
   text-align: center;
+  @media (min-width: $tablet-width) {
+    margin-top: 0px;
+  }
+  @media (min-width: $desktop-width) {
+    align-self: auto;
+    margin-top: 12px;
+    margin-left: 109px;
+    display: unset;
+  }
+}
+.form {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    @include align-justify-center;
+  }
 }
 .enjoy {
   font-weight: 700;
@@ -14,10 +29,6 @@
   padding-bottom: 20px;
   margin: 0px;
 }
-// .form {
-//   display: inline-block;
-//   justify-content: center;
-// }
 .subscribe-input {
   font-weight: 500;
   font-size: 16px;
@@ -32,12 +43,22 @@
   padding: 15px 16px;
   width: 450px;
   height: 50px;
+  @media (min-width: $desktop-width) {
+    margin-right: 12px;
+    padding: 16px 15px;
+    height: 50px;
+    width: 358px;
+  }
 }
 .subscribe-btn {
   display: inline-flex;
   align-items: center;
   text-align: center;
   margin-top: 20px;
+  @media (min-width: $desktop-width) {
+    display: flex;
+    margin: 0px;
+  }
 
   font-weight: 700;
   font-size: 16px;

@@ -250,15 +250,15 @@ button {
   margin: 0px auto;
 }
 
-@media screen and (min-width: 769.98px) {
+@media screen and (min-width: 768px) {
   .container {
-    width: 738px;
+    width: 768px;
   }
 }
 
 @media screen and (min-width: 1600px) {
   .container {
-    width: 1170px;
+    width: 1200px;
   }
 }
 
@@ -305,7 +305,7 @@ textarea::placeholder {
   margin-bottom: 16px;
 }
 
-@media (min-width: 769.98px) {
+@media (min-width: 768px) {
   .logo.header {
     margin-right: 88px;
     margin-top: 26px;
@@ -354,7 +354,7 @@ header {
   display: none;
 }
 
-@media (min-width: 769.98px) {
+@media (min-width: 768px) {
   .address-link {
     display: block;
     padding: 0px;
@@ -374,7 +374,7 @@ header {
   display: none;
 }
 
-@media (min-width: 769.98px) {
+@media (min-width: 768px) {
   .nav-link {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -448,7 +448,7 @@ header {
   font-size: 14px;
 }
 
-@media (min-width: 769.98px) {
+@media (min-width: 768px) {
   .contacts {
     display: inline-block;
     -webkit-box-align: center;
@@ -493,7 +493,7 @@ header {
           justify-content: center;
 }
 
-@media (min-width: 769.98px) {
+@media (min-width: 768px) {
   .header-mail {
     font-size: 12px;
     line-height: 1.16;
@@ -516,7 +516,7 @@ header {
   fill: #757575;
 }
 
-@media (min-width: 769.98px) {
+@media (min-width: 768px) {
   .mail-icon {
     margin: 0px;
     padding: 0px;
@@ -544,7 +544,7 @@ header {
           justify-content: center;
 }
 
-@media (min-width: 769.98px) {
+@media (min-width: 768px) {
   .header-tel {
     font-size: 12px;
     line-height: 1.16;
@@ -566,7 +566,7 @@ header {
   fill: #757575;
 }
 
-@media (min-width: 769.98px) {
+@media (min-width: 768px) {
   .tel-icon {
     margin: 0px;
     padding: 0px;
@@ -947,7 +947,7 @@ header {
   fill: #2196f3;
 }
 
-@media (min-width: 769.98px) {
+@media (min-width: 768px) {
   .input:focus ~ .input-text {
     color: #757575;
   }
@@ -1124,7 +1124,7 @@ header {
   margin-bottom: 0px;
 }
 
-@media (min-width: 769.98px) {
+@media (min-width: 768px) {
   .features-container {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
@@ -1134,7 +1134,7 @@ header {
   }
 }
 
-@media (min-width: 769.98px) {
+@media (min-width: 768px) {
   .features-item {
     display: block;
     width: 354px;
@@ -1175,7 +1175,7 @@ header {
   margin-top: 30px;
 }
 
-@media (min-width: 769.98px) {
+@media (min-width: 768px) {
   .features-title {
     display: block;
   }
@@ -1222,7 +1222,7 @@ header {
   display: table;
 }
 
-@media (min-width: 769.98px) {
+@media (min-width: 768px) {
   .wrk-section {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1242,6 +1242,7 @@ header {
             justify-content: center;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
+    margin: auto;
   }
 }
 
@@ -1271,7 +1272,11 @@ header {
   border-radius: 0px 0px 4px 4px;
 }
 
-@media (min-width: 769.98px) {
+@media (min-width: 768px) {
+  .wrk-container {
+    -ms-flex-preferred-size: calc(100% / 2 - 30px);
+        flex-basis: calc(100% / 2 - 30px);
+  }
   .wrk-container:nth-child(odd) {
     margin-right: 30px;
   }
@@ -1291,9 +1296,9 @@ header {
   width: 450px;
 }
 
-@media (min-width: 769.98px) {
+@media (min-width: 768px) {
   .image {
-    width: 354px;
+    width: 353px;
   }
 }
 
@@ -1376,6 +1381,13 @@ header {
   fill: currentColor;
 }
 
+@media (min-width: 1600px) {
+  .clients-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
 .clients-title {
   font-weight: 700;
   font-size: 36px;
@@ -1388,6 +1400,13 @@ header {
   margin: 0px;
 }
 
+@media (min-width: 1600px) {
+  .clients-title {
+    padding-bottom: 50px;
+    padding-top: 0px;
+  }
+}
+
 .clients-box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1397,12 +1416,45 @@ header {
   padding-bottom: 30px;
 }
 
+@media (min-width: 1600px) {
+  .clients-box {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .client-list {
   margin-bottom: 30px;
 }
 
 .client-list:nth-child(2n + 1) {
   margin-right: 30px;
+}
+
+@media (min-width: 768px) {
+  .client-list {
+    width: 226px;
+    -ms-flex-preferred-size: calc((100% / 3 - 30px) / 3);
+        flex-basis: calc((100% / 3 - 30px) / 3);
+  }
+  .client-list:nth-child(2n + 1) {
+    margin-right: 0px;
+  }
+  .client-list:nth-child(3n + 1) {
+    margin-right: 30px;
+  }
+  .client-list:nth-child(3n + 2) {
+    margin-right: 30px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .client-list:nth-child(-n + 5) {
+    margin-right: 30px;
+  }
 }
 
 .client-link {
@@ -1419,13 +1471,25 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   outline: none;
+}
+
+@media screen and (min-width: 768px) {
+  .client-link {
+    width: 226px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .client-link {
+    width: 170px;
+  }
 }
 
 .client-link:hover, .client-link:focus {
@@ -1437,12 +1501,63 @@ header {
   fill: currentColor;
 }
 
-.footer-container {
-  text-align: center;
+.footer-logo {
+  width: 154px;
+  display: contents;
+}
+
+@media (min-width: 768px) {
+  .footer-logo {
+    margin-left: 115px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .footer-logo {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
 }
 
 .logo.footer {
   margin: 0px;
+}
+
+@media (min-width: 768px) {
+  .container.footer {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 1600px) {
+  .container.footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.footer-container {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .footer-container {
+    -ms-flex-preferred-size: calc(100% / 2 - 30px);
+        flex-basis: calc(100% / 2 - 30px);
+  }
+}
+
+@media (min-width: 1600px) {
+  .footer-container {
+    display: block;
+    text-align: unset;
+  }
 }
 
 .footer-section {
@@ -1474,6 +1589,7 @@ header {
 }
 
 .contacts.footer {
+  display: block;
   padding-top: 9px;
 }
 
@@ -1481,9 +1597,45 @@ header {
   padding-top: 20px;
 }
 
+@media (min-width: 768px) {
+  .ftr-address {
+    width: 232px;
+    margin-left: 76px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .ftr-address {
+    display: block;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .enjoy-box {
   margin-top: 60px;
   text-align: center;
+  position: static;
+}
+
+@media (min-width: 768px) {
+  .enjoy-box {
+    margin-top: 0px;
+    position: absolute;
+    right: 89px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .enjoy-box {
+    position: static;
+    margin-top: 12px;
+    margin-left: 70px;
+  }
 }
 
 .svg-box {
@@ -1531,9 +1683,40 @@ header {
 }
 
 .subscribe {
-  display: inline-block;
+  display: block;
   margin-top: 60px;
   text-align: center;
+}
+
+@media (min-width: 768px) {
+  .subscribe {
+    margin-top: 0px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .subscribe {
+    -ms-flex-item-align: auto;
+        -ms-grid-row-align: auto;
+        align-self: auto;
+    margin-top: 12px;
+    margin-left: 109px;
+    display: unset;
+  }
+}
+
+@media (min-width: 1600px) {
+  .form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .enjoy {
@@ -1561,6 +1744,15 @@ header {
   height: 50px;
 }
 
+@media (min-width: 1600px) {
+  .subscribe-input {
+    margin-right: 12px;
+    padding: 16px 15px;
+    height: 50px;
+    width: 358px;
+  }
+}
+
 .subscribe-btn {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -1583,6 +1775,15 @@ header {
   border: none;
   width: 200px;
   height: 50px;
+}
+
+@media (min-width: 1600px) {
+  .subscribe-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0px;
+  }
 }
 
 .svg-subscribe {

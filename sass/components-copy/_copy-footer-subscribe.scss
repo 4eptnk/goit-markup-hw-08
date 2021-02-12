@@ -2,6 +2,17 @@
   margin-top: 12px;
   margin-left: 109px;
 }
+.enjoy {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $primary-title-color;
+
+  padding-bottom: 20px;
+  margin: 0px;
+}
 .subscribe-input {
   font-weight: 500;
   font-size: 16px;
@@ -19,12 +30,13 @@
   width: 358px;
 }
 .subscribe-btn {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 18.7px;
   display: flex;
   align-items: center;
   text-align: center;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18.7px;
   letter-spacing: 0.06em;
   padding: 10px 28px 10px 29px;
 

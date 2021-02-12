@@ -19,6 +19,7 @@
     display: inline-flex;
     justify-content: center;
     flex-wrap: nowrap;
+    margin: auto;
   }
 }
 .cmd-title {
@@ -39,8 +40,10 @@
   padding-bottom: 24px;
   margin-bottom: 30px;
   @media (min-width: $tablet-width) {
-    // flex-basis: calc(100% / 2 - 0px);
-    @include nth-child-odd;
+    flex-basis: calc(100% / 2 - 30px);
+    &:nth-child(odd) {
+      margin-right: 30px;
+    }
   }
 
   background: $primary-title-color;
@@ -54,7 +57,7 @@
 .image {
   width: 450px;
   @media (min-width: $tablet-width) {
-    width: 354px;
+    width: 353px;
   }
   @media (min-width: $desktop-width) {
     width: 270px;

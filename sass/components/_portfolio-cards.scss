@@ -1,39 +1,41 @@
+.container.list {
+  padding-top: 40px;
+  padding-bottom: 60px;
+  @media (min-width: $desktop-width) {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+}
 .port-box {
   padding: 0px;
   display: flex;
   flex-wrap: wrap;
 }
 .port-container {
-  display: block;
-
-  // border: 1px solid #eeeeee;
-  cursor: pointer;
-  flex-basis: calc((100% / 3 - 30px) / 3);
-
-  transition: $animation-function;
-  transition-property: box-shadow;
-  margin-right: 30px;
-  &:nth-child(-n + 6) {
-    margin-bottom: 30px;
+  @include card-option-mobile;
+  @include card-focus-hover;
+  @media (min-width: $tablet-width) {
+    @include card-option-tablet;
   }
-  &:nth-child(3n) {
-    margin-right: 0px;
-  }
-  & :focus .card-text,
-  & :hover .card-text {
-    transform: translateY(0%);
-  }
-  &:focus,
-  &:hover {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-      1px 4px 6px rgba(0, 0, 0, 0.16);
+  @media (min-width: $desktop-width) {
+    @include card-option-desktop;
   }
 }
 .port-card {
   position: relative;
-  width: 368px;
-  height: 294px;
   overflow: hidden;
+}
+.port-photo {
+  width: 450px;
+  height: 294px;
+  @media (min-width: $tablet-width) {
+    width: 354px;
+    height: 294px;
+  }
+  @media (min-width: $desktop-width) {
+    width: 370px;
+    height: 294px;
+  }
 }
 .card-text {
   padding: 63px 24px;

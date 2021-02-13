@@ -1,21 +1,38 @@
 .port-section {
+  padding-top: 60px;
   @media (min-width: $desktop-width) {
-    padding-top: 81px;
+    padding-top: 94px;
     padding-bottom: 94px;
   }
 }
+
 .btn-container {
+  & :not(:last-child) {
+    margin-right: 8px;
+  }
+  display: flex;
+  flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    justify-content: center;
+  }
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: center;
     padding-bottom: 50px;
   }
 }
-.btn-container {
+.port-button {
+  display: block;
+  flex-basis: auto;
+  &:nth-child(-n + 3) {
+    margin-bottom: 15px;
+  }
+  @media (min-width: $tablet-width) {
+    @include nth-child-zero;
+  }
   @media (min-width: $desktop-width) {
-    & :not(:last-child) {
-      margin-right: 8px;
-    }
+    @include nth-child-zero;
   }
 }
 .port-link {

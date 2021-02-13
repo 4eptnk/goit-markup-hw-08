@@ -31,6 +31,11 @@
     margin-right: 30px;
   }
 }
+@mixin nth-child-zero {
+  &:nth-child(n) {
+    margin-bottom: 0px;
+  }
+}
 @mixin not-last-child-margin-30 {
   &:not(:last-child) {
     margin-right: 30px;
@@ -73,5 +78,45 @@
   }
   &:nth-child(3n + 2) {
     margin-right: 30px;
+  }
+}
+@mixin card-focus-hover {
+  & :focus .card-text,
+  & :hover .card-text {
+    transform: translateY(0%);
+  }
+  &:focus,
+  &:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+}
+@mixin card-option-mobile {
+  display: block;
+  flex-basis: auto;
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  transition: $animation-function;
+  transition-property: box-shadow;
+
+  cursor: pointer;
+}
+@mixin card-option-tablet {
+  width: 354px;
+  height: 404px;
+  &:nth-child(-2n + 7) {
+    margin-right: 30px;
+  }
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+@mixin card-option-desktop {
+  width: 370px;
+  height: 404px;
+  &:nth-child(n + 7) {
+    margin-bottom: 0;
   }
 }

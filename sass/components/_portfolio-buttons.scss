@@ -1,15 +1,21 @@
 .port-section {
-  padding-top: 81px;
-  padding-bottom: 94px;
+  @media (min-width: $desktop-width) {
+    padding-top: 81px;
+    padding-bottom: 94px;
+  }
 }
 .btn-container {
-  display: flex;
-  justify-content: center;
-  padding-bottom: 50px;
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+  }
 }
 .btn-container {
-  & :not(:last-child) {
-    margin-right: 8px;
+  @media (min-width: $desktop-width) {
+    & :not(:last-child) {
+      margin-right: 8px;
+    }
   }
 }
 .port-link {

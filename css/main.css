@@ -580,23 +580,29 @@ header {
   }
 }
 
-.port-section {
-  padding-top: 81px;
-  padding-bottom: 94px;
+@media (min-width: 1600px) {
+  .port-section {
+    padding-top: 81px;
+    padding-bottom: 94px;
+  }
 }
 
-.btn-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding-bottom: 50px;
+@media (min-width: 1600px) {
+  .btn-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-bottom: 50px;
+  }
 }
 
-.btn-container :not(:last-child) {
-  margin-right: 8px;
+@media (min-width: 1600px) {
+  .btn-container :not(:last-child) {
+    margin-right: 8px;
+  }
 }
 
 .port-link {
@@ -1512,25 +1518,22 @@ header {
   }
 }
 
-@media (min-width: 1600px) {
-  .footer-logo {
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-  }
-}
-
 .logo.footer {
   margin: 0px;
 }
 
 @media (min-width: 768px) {
   .container.footer {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
   }
 }
 
@@ -1539,6 +1542,20 @@ header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer-address {
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .footer-address {
+    margin-top: 20px;
   }
 }
 
@@ -1555,6 +1572,8 @@ header {
 
 @media (min-width: 1600px) {
   .footer-container {
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
     display: block;
     text-align: unset;
   }
@@ -1593,49 +1612,39 @@ header {
   padding-top: 9px;
 }
 
-.ftr-address {
-  padding-top: 20px;
-}
-
 @media (min-width: 768px) {
   .ftr-address {
     width: 232px;
-    margin-left: 76px;
+    margin: 0px;
   }
 }
 
 @media (min-width: 1600px) {
   .ftr-address {
-    display: block;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    margin-left: 0px;
   }
 }
 
 .enjoy-box {
   margin-top: 60px;
   text-align: center;
-  position: static;
 }
 
 @media (min-width: 768px) {
   .enjoy-box {
     margin-top: 0px;
-    position: absolute;
-    right: 89px;
   }
 }
 
 @media (min-width: 1600px) {
   .enjoy-box {
-    position: static;
     margin-top: 12px;
     margin-left: 70px;
   }
+}
+
+.footer.enjoy {
+  margin-top: 0px;
 }
 
 .svg-box {
@@ -1690,7 +1699,9 @@ header {
 
 @media (min-width: 768px) {
   .subscribe {
+    display: block;
     margin-top: 0px;
+    text-align: center;
   }
 }
 
@@ -1700,16 +1711,16 @@ header {
         -ms-grid-row-align: auto;
         align-self: auto;
     margin-top: 12px;
-    margin-left: 109px;
+    margin-left: 93px;
     display: unset;
   }
 }
 
 @media (min-width: 1600px) {
   .form {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -1730,6 +1741,19 @@ header {
   margin: 0px;
 }
 
+@media (min-width: 768px) {
+  .enjoy {
+    margin-top: 60px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .enjoy {
+    margin-top: 0px;
+    text-align: left;
+  }
+}
+
 .subscribe-input {
   font-weight: 500;
   font-size: 16px;
@@ -1742,6 +1766,12 @@ header {
   padding: 15px 16px;
   width: 450px;
   height: 50px;
+}
+
+@media (min-width: 768px) {
+  .subscribe-input {
+    display: block;
+  }
 }
 
 @media (min-width: 1600px) {

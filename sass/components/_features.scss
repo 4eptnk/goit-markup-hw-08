@@ -25,7 +25,6 @@
   @include nth-child-odd;
   @media (min-width: $desktop-width) {
     width: 270px;
-    flex-basis: auto;
     @include not-last-child-margin-30;
   }
 }

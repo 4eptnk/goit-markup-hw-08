@@ -1034,6 +1034,13 @@ header {
   color: #ffffff;
 }
 
+@media (min-width: 1200px) {
+  .hero-title {
+    font-size: 44px;
+    line-height: 1.36;
+  }
+}
+
 .hero-button {
   font-weight: 700;
   font-size: 16px;

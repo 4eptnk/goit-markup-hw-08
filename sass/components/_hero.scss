@@ -31,6 +31,11 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: $primary-title-color;
+
+  @media (min-width: $desktop-width) {
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 .hero-button {
   font-weight: 700;
